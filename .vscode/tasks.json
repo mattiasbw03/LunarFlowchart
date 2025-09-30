@@ -19,10 +19,17 @@
 				"$gcc"
 			],
 			"group": {
-				"kind": "build",
+				"kind": "test",
 				"isDefault": true
 			},
 			"detail": "compiler: C:\\msys64\\ucrt64\\bin\\gcc.exe"
+		},
+		{
+			"label": "Run test task",
+			"type": "shell",
+			"command": "gcc Conveyorbelt.c -o Conveyorbelt.exe && Conveyorbelt.exe",
+			"group": "test",
+			"problemMatcher": []
 		}
 	]
 }

@@ -1,8 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-int main(){
-    
-    // this is a comment
-    printf("1\t2\t3\n4\t5\t6\n7\t8\t9");    
+int main() {
+    // Initialize random seed
+    srand((unsigned int)time(NULL));
+
+    // Generate and print 5 random numbers in [0, 4]
+    for (int i = 0; i < 5; i++) {
+        int num = rand() % 5; // Gives a number from 0 to 4
+        printf("%d\n", num);
+    }
     return 0;
 }
