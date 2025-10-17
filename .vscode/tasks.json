@@ -4,7 +4,11 @@
 		{
 			"type": "cppbuild",
 			"label": "C/C++: gcc.exe build active file",
+<<<<<<< HEAD
 			"command": "C:\\msys64\\ucrt64\\bin\\gcc.exe",
+=======
+			"command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+>>>>>>> e7851c6af067be04e8b44b317066b8a2610debfb
 			"args": [
 				"-fdiagnostics-color=always",
 				"-g",
@@ -19,6 +23,7 @@
 				"$gcc"
 			],
 			"group": {
+<<<<<<< HEAD
 				"kind": "test",
 				"isDefault": true
 			},
@@ -30,6 +35,12 @@
 			"command": "gcc Conveyorbelt.c -o Conveyorbelt.exe && Conveyorbelt.exe",
 			"group": "test",
 			"problemMatcher": []
+=======
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\msys64\\mingw64\\bin\\gcc.exe"
+>>>>>>> e7851c6af067be04e8b44b317066b8a2610debfb
 		}
 	]
 }
